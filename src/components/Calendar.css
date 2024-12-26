@@ -1,0 +1,151 @@
+/* Calendar.css */
+/* 캘린더 컨테이너 */
+.calendar-container {
+  width: 100%;
+}
+
+/* 기본 캘린더 스타일 */
+.react-calendar {
+  width: 100% !important;
+  border: none;
+  background-color: transparent;
+}
+
+/* 요일 행 스타일링 */
+.react-calendar__month-view__weekdays {
+  border-bottom: none;
+  background-color: #f0f0f0;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-size: 22px;
+  padding: 0.5em;
+  border-bottom: none;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* 날짜 타일 기본 스타일 */
+.react-calendar__tile {
+  padding: 0.5em 0.5em;
+  font-size: 1em;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: transparent;
+}
+
+/* active 상태 스타일 제거 */
+.react-calendar__tile--active,
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: transparent !important;
+  color: inherit !important;
+  cursor: default;
+}
+
+/* 일요일 스타일 */
+.react-calendar__month-view__days__day.react-calendar__month-view__days__day:nth-child(
+    7n + 1
+  ) {
+  background-color: #f8f8f8 !important;
+}
+
+/* 비활성화된 모든 날짜 글자색 */
+.react-calendar__month-view__days__day.react-calendar__tile:disabled,
+.react-calendar__month-view__days__day:disabled {
+  color: #ccc !important;
+  background-color: transparent;
+  cursor: default;
+}
+
+/* 비활성화된 일요일 스타일 */
+.react-calendar__month-view__days__day.react-calendar__month-view__days__day:nth-child(
+    7n + 1
+  ):disabled {
+  background-color: #f8f8f8 !important;
+  color: #ccc !important;
+}
+
+/* 모든 hover/focus/active 효과 제거 */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus,
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus,
+.react-calendar__tile--hasActive {
+  background-color: transparent !important;
+  cursor: default;
+}
+
+/* 주말 텍스트 색상 기본값으로 */
+.react-calendar__month-view__days__day--weekend {
+  color: inherit;
+}
+
+/* 현재 날짜 스타일 */
+.react-calendar__tile.react-calendar__tile--now {
+  background: transparent !important;
+  color: blue !important;
+}
+
+/* 현재 날짜가 일요일인 경우 */
+.react-calendar__tile.react-calendar__tile--now:nth-child(7n + 1) {
+  background-color: #f8f8f8 !important;
+  color: blue !important;
+}
+
+/* 비활성화된 날짜와 현재 날짜가 겹치는 경우 */
+.react-calendar__tile.react-calendar__tile--now:disabled,
+.react-calendar__month-view__days__day.react-calendar__tile--now:disabled {
+  color: #ccc !important;
+  background-color: transparent !important;
+}
+
+/* 비활성화된 일요일이면서 현재 날짜인 경우 */
+.react-calendar__month-view__days__day.react-calendar__tile--now:nth-child(
+    7n + 1
+  ):disabled {
+  background-color: #f8f8f8 !important;
+  color: #ccc !important;
+}
+
+/* 감정 점 스타일 */
+.dot {
+  display: flex;
+  justify-content: center;
+  gap: 4px;  /* 점들 사이의 간격 */
+  margin-top: 4px;
+  flex-wrap: wrap;  /* 점이 많을 경우 다음 줄로 넘어가도록 */
+  max-width: 100%;  /* 점들이 날짜 칸을 벗어나지 않도록 */
+}
+
+.dot-mark {
+  font-size: 0.5em;
+  line-height: 1;  /* 점들이 너무 벌어지지 않도록 */
+}
+
+/* 감정별 색상 */
+.emotion-1 {
+  color: #64c964;
+}
+
+.emotion-2 {
+  color: #9dd772;
+}
+
+.emotion-3 {
+  color: #fdce17;
+}
+
+.emotion-4 {
+  color: #fd8446;
+}
+
+.emotion-5 {
+  color: #fd565f;
+}

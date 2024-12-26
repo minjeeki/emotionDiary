@@ -1,0 +1,39 @@
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 1000;
+}
+
+.splash-content {
+  color: #333;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.splash-content .title {
+  font-size: 54px;
+  font-weight: bold;
+  color: #333;
+}
+.splash-content .desc {
+  font-size: 24px;
+}
+
+.splash-imgs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.splash-imgs > img {
+  width: 50px;
+}
