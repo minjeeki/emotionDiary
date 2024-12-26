@@ -75,4 +75,4 @@ src/
    - TypeScript 도입
 
 ## 참고 자료
-- [https://velog.io/@hyerani/React-%EC%BA%98%EB%A6%B0%EB%8D%94-%EB%A7%8C%EB%93%A4%EA%B8%B0-react-calendar](React - 캘린더 만들기 (react-calendar))
+- [React - 캘린더 만들기](https://velog.io/@hyerani/React-%EC%BA%98%EB%A6%B0%EB%8D%94-%EB%A7%8C%EB%93%A4%EA%B8%B0-react-calendar)
